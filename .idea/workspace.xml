@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="task1.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="task1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task1/task1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1656">
-              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+            <state relative-caret-position="1083">
+              <caret line="193" column="70" selection-start-line="193" selection-start-column="70" selection-end-line="193" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -35,18 +35,8 @@
       <file leaf-file-name="task3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task1/task3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task4.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task1/task4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="180">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -67,9 +57,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/task1/task1.html" />
-        <option value="$PROJECT_DIR$/task1/task3.html" />
         <option value="$PROJECT_DIR$/task1/task4.html" />
+        <option value="$PROJECT_DIR$/task1/task3.html" />
+        <option value="$PROJECT_DIR$/task1/task1.html" />
       </list>
     </option>
   </component>
@@ -114,8 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -150,6 +138,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,11 +203,12 @@
       <workItem from="1467554071353" duration="2012000" />
       <workItem from="1467556389779" duration="4156000" />
       <workItem from="1467593948073" duration="4867000" />
+      <workItem from="1467601625012" duration="3455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26454000" />
+    <option name="totallyTimeSpent" value="29909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -258,6 +249,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/task1/task1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1/task3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1/task4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task1/task1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
@@ -319,26 +334,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task1/task1.html">
+    <entry file="file://$PROJECT_DIR$/task1/task4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        <state relative-caret-position="381">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task1/task3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        <state relative-caret-position="180">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task1/task4.html">
+    <entry file="file://$PROJECT_DIR$/task1/task1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="1083">
+          <caret line="193" column="70" selection-start-line="193" selection-start-column="70" selection-end-line="193" selection-end-column="70" />
           <folding />
         </state>
       </provider>

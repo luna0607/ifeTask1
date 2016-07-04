@@ -2,14 +2,28 @@
 <html lang="en">
 <head>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body{
             font-family: 微软雅黑;
+            overflow: auto;
         }
-        a.one:link{color: white}
-        a.one:visited{color: lightgray}
-        a.one{
-            //float: right;
+        a.one:link{
+            color: white;
+            text-decoration: none;
         }
+        a.one:visited{
+            color: lightgray;
+            text-decoration: none;
+        }
+        div.a{
+            position: absolute;
+            top:50px;
+            right: 20px;
+        }
+
         ul.one{
             list-style-type: circle;
         }
@@ -31,11 +45,31 @@
             border-right-style: inset;
             border-bottom-style: inset;
             border-color: grey;
-            //border:5px solid gray;
             margin:10px;
         }
+        div.left{
+            margin-right: 340px;
+
+        }
+        div.right{
+            width: 300px;
+            background-color: white;
+            padding:10px;
+            border-right-style: inset;
+            border-bottom-style: inset;
+            border-color: grey;
+            margin:10px;
+            position: absolute;
+            right: 0;
+            top:110px;
+            //float: right;
+            zoom:1;
+        }
+        div.clear{
+            clear:both; height: 0; line-height: 0; font-size: 0;
+        }
         div.top{
-            background-color: black;;
+            background-color: black;
         }
         input.two{
             margin-right: auto;
@@ -72,9 +106,11 @@ td.two{
 </head>
 <div class="top">
 <img src="1.jpg" width="100" height="100">
+    <div class="a">
 <a class="one" href="" >·导航链接一</a>
 <a class="one" href="">·导航链接二</a>
-<a class="one" href="">·导航链接三</a></div>
+<a class="one" href="">·导航链接三</a></div></div>
+<div class="left">
 <div class="ex">
 <h2>文章一级标题</h2>
     <div class="grey">
@@ -139,8 +175,8 @@ td.two{
         <td colspan="2">row 3, cell 2</td>
     </tr>
 </table>
-</div>
-<div class="ex">
+</div></div>
+<div class="right">
 <h2>这里以后是一个侧栏</h2>
 <h2>侧栏注册窗口</h2>
 <form name="input"action="html_form_action.php" method="get">
@@ -155,14 +191,15 @@ td.two{
     <option value="其他">其他城市</option>
 </select><br/></td></tr>
    <tr>
-    <td>爱好：<input type="checkbox" name="hobby" value="微积分">微积分<input type="checkbox" name="hobby" value="软工">软工<input type="checkbox" name="hobby" value="计组">计组
-    <input type="checkbox" name="hobby" value="都不喜欢">喜欢前三个的是有病吧<br/></td>
+    <td>爱好：<input type="checkbox" name="hobby" value="微积分" width="100%">微积分<input type="checkbox" name="hobby" value="软工">软工<input type="checkbox" name="hobby" value="计组">计组
+    <input type="checkbox" name="hobby" value="都不喜欢">喜欢前三个的是有病吧</td>
 </tr
 ><tr>
-    <td>个人描述：<textarea rows="10" cols=100% ></textarea><br/></td></tr>
+    <td>个人描述：<textarea rows="10"  ></textarea><br/></td></tr>
 </table>
      <input class="two" type="submit" value="确认提交" width="100%">
 </form>
+    <div class="clear"></div>
 </div>
 </body>
 </html>
