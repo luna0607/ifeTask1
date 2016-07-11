@@ -250,7 +250,67 @@
         }
 
         div.divFive{
-            
+            background: url("FreshPaint-0-2016.07.11-11.46.31.png") ;
+            background-size: cover;
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            top: 1200px;
+            left: 0px;
+        }
+        div.divFiveTextOne{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: 微软雅黑;
+            color: darkgray;
+            font-size: 200%;
+          padding: 20px;
+            text-shadow: 2px 2px white;
+        }
+        div.line{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+            border: solid darkgrey 1px;
+        }
+        select{
+            color: darkgreen;
+            font-family: 微软雅黑;
+            border: solid 2px darkgreen;
+            margin-top: 40px;
+            width: 200px;
+            height: 30px;
+            background-color: white;
+            box-shadow: 2px 2px 1px white;
+            position: absolute;
+
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            padding-right: 14px;
+            background: url("arrow.png") no-repeat scroll right center transparent;
+            background-size: contain;
+        }
+        select::-ms-expand { display: none; }
+        option{
+            height: 30px;
+            line-height: 30px;
+            width: 100%;
+            font-family: 微软雅黑;
+            font-size: 150%;
+            color: darkgreen;
+        }
+        input{
+            background-color: darkgreen;
+            color:lightgray;
+            font-family: 微软雅黑;
+            text-align: center;
+            width: 200px;
+            height: 30px;
+            margin-top: 40px;
+            position: absolute;
+            left: 71.3%;
         }
     </style>
 </head>
@@ -308,7 +368,26 @@
     <div class="divFourText">关于新世界，你不知道的还有什么？</div>
 </div>
 <div class="divFive">
-    <div class="divFiveTextOne"></div>
+    <div class="divFiveTextOne">查找新世界城市活动信息</div>
+    <div class="line"></div>
+    <div class="divFiveTextOne" style="font-size:100% ">每个城市有不同的活动信息，请自主查找您需要了解的城市。</div>
+   <select style=" left: 9%;">
+       <option>中国</option>
+       <option>其他</option>
+   </select>
+    <select style=" left: 30%;">
+        <option>江苏</option>
+        <option>浙江</option>
+        <option>山东</option>
+        <option>……</option>
+    </select>
+    <select style="left: 50.6%">
+        <option>城市</option>
+        <option>并不会做动态的</option>
+        <option>真的不会</option>
+        <option>……</option>
+    </select>
+    <input type="submit" value="搜         索">
 </div>
 </body>
 </html>
