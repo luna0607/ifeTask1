@@ -36,12 +36,16 @@
      */
     function getData() {
         var ul=document.getElementsByTagName("ul");
+
         var li=ul[0].getElementsByTagName("li");
         var data=new Array(li.length);
+
         for(var i=0;i<li.length;i++){
-            data[i]=li[i].split("空气")[0];
-            data[i].push(li[i].getElementsByTagName("b")[0]);
+            data[i]=[li[i].innerHTML.split("空气")[0],li[i].getElementsByTagName("b")[0].innerHTML];
+
+            document.getElementById("source").innerHTML = data[i];
         }
+        document.getElementById("source").innerHTML = "1234";
 
         /*
          data = [
@@ -50,6 +54,9 @@
          ……
          ]
          */
+        document.getElementById("source").innerHTML = "1234before";
+        //    document.getElementById("source").innerHTML = data[0];
+        document.getElementById("source").innerHTML = "1234";
 
         return data;
 
@@ -83,7 +90,7 @@
     }
 
     function btnHandle() {
-        document.getElementById("source").innerHTML="1244";
+    //    document.getElementById("source").innerHTML="1244";
         document.write("12222");
         var aqiData = getData();
         aqiData = sortAqiData(aqiData);
@@ -94,7 +101,7 @@
     function init() {
 
         // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
-        document.getElementById("sort-btn").addEventListener('onclick',btnHandle);
+        document.getElementById("sort-btn").onclick=btnHandle();
 
     }
 
