@@ -42,10 +42,7 @@
 
         for(var i=0;i<li.length;i++){
             data[i]=[li[i].innerHTML.split("空气")[0],li[i].getElementsByTagName("b")[0].innerHTML];
-
-            document.getElementById("source").innerHTML = data[i];
         }
-        document.getElementById("source").innerHTML = "1234";
 
         /*
          data = [
@@ -54,9 +51,6 @@
          ……
          ]
          */
-        document.getElementById("source").innerHTML = "1234before";
-        //    document.getElementById("source").innerHTML = data[0];
-        document.getElementById("source").innerHTML = "1234";
 
         return data;
 
@@ -90,8 +84,6 @@
     }
 
     function btnHandle() {
-    //    document.getElementById("source").innerHTML="1244";
-        document.write("12222");
         var aqiData = getData();
         aqiData = sortAqiData(aqiData);
         render(aqiData);
