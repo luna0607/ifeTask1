@@ -23,7 +23,7 @@ aqiData=[document.getElementById("aqi-city-input").innerHTML,
     var td2=document.createElement("td");
     td2.innerHTML=aqiData[1];
     var td3=document.createElement("td");
-    var 
+
     document.getElementById("aqi-table").appendChild()
 }
 
