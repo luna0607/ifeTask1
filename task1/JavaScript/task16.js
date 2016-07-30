@@ -11,6 +11,7 @@
  */
 var aqiData = {};
 
+var aqiTable=[];
 /**
  * 从用户输入中获取数据，向aqiData中增加一条数据
  * 然后渲染aqi-list列表，增加新增的数据
@@ -23,15 +24,19 @@ aqiData=[document.getElementById("aqi-city-input").innerHTML,
     var td2=document.createElement("td");
     td2.innerHTML=aqiData[1];
     var td3=document.createElement("td");
-
-    document.getElementById("aqi-table").appendChild()
+    td3.innerHTML=document.createElement("button").innerHTML="删除";
+    var tr=document.createElement("tr");
+    tr.innerHTML=td1+td2+td3;
+    aqiTable.push(tr);
 }
 
 /**
  * 渲染aqi-table表格
  */
 function renderAqiList() {
-
+    for(var i=0;i<aqiTable.length;i++){
+        document.getElementById("aqi-table").appendChild(aqiTable[i]);
+    }
 }
 
 /**
@@ -48,8 +53,8 @@ function addBtnHandle() {
  * 获取哪个城市数据被删，删除数据，更新表格显示
  */
 function delBtnHandle() {
-    // do sth.
 
+    // do sth.
     renderAqiList();
 }
 
