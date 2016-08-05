@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function insCell()
+        {
+            var x=document.getElementById("1").insertRow();
+            var a=x.insertCell(0);
+            a.innerHTML="1";
+            var b=x.insertCell(0);
+            b.innerHTML="<button>甚至</button>";
+          //  x.innerHTML="123";
+            document.getElementById("2").innerHTML=x.innerHTML;
+        }
+    </script>
+</head>
+<body>
+<table id="1" border="1">
+    <tr id="tr1">
+        <td>Peter</td>
+        <td>Griffin</td>
+    </tr>
+</table>
+<br>
+<input type="button" onclick="insCell()" value="Insert cell">
+</body>
+</html>
