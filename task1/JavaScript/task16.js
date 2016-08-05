@@ -18,7 +18,8 @@ function addAqiData() {
     var button=a.insertCell(0);
     button.innerHTML="<button onclick='delBtnHandle(this)'>删除</button>";
     var v =a.insertCell(0);
-    v.innerHTML=document.getElementById("aqi-value-input").value;
+    var  value=document.getElementById("aqi-value-input").value.replace(/[ ]/g,"");
+    v.innerHTML=value;
     var city=a.insertCell(0);
     city.innerHTML=document.getElementById("aqi-city-input").value;
 
