@@ -99,7 +99,7 @@ function initCitySelector() {
     // 给select设置事件，当选项发生变化时调用函数citySelectChange
 
 }
-
+//????
 /**
  * 初始化图表需要的数据格式
  */
