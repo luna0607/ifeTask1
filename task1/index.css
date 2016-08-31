@@ -1,0 +1,37 @@
+title{
+    font-family: "Microsoft YaHei", yaHei;
+}
+div.head{
+    font-family: 幼圆;
+    text-shadow: #5a5b5b;
+    height: 60px;
+    width: 100%;
+}
+div.task7text{
+    left: 2px;
+    bottom: 44px;
+}
+
+a.task7{
+    font-family: 'Microsoft YaHei', yaHei;
+position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 2px;
+    bottom: 2px;
+    background: grey;
+    border-right: lightgray;
+    border-bottom:lightgray ;
+    text-align: center;
+    text-decoration: none;
+}
+fieldset{
+    position: absolute;
+    top: 62px;
+    height: auto;
+    width: auto;
+    font-family: 'Microsoft YaHei', yaHei;
+    border: solid grey;
+    border-radius: 15px;
+    text:grey;
+}
