@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>header</title>
+    <style>
+        *{
+            font-family: "Microsoft YaHei", yaHei;
+            margin: 0;
+            padding: 0;
+        }
+        #one{
+            position: absolute;
+            width:99%;
+            height:50px;
+        }
+        #logo{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 50px;
+            }
+        #name{
+            color: grey;
+            position: absolute;
+            top: 0;
+            left: 67px;
+            line-height: 60px;
+            text-shadow: 0.5px 0.5px #424242;
+        }
+        #service{
+            width: auto;
+            position: absolute;
+            top: 0;
+            right: 170px;
+        }
+        #serviceOne{
+            height: 45px;
+            width: 100px;
+            line-height: 55px;
+            text-align: center;
+        }
+        #usr{
+            position: absolute;
+            top:0;
+            right: 4px;
+            width: 150px;
+            height: 100%;
+        }
+        #usrImg{
+            position: absolute;
+            top: 1.5px;
+            left: 0;
+            width: 45px;
+            height: 44px;
+            border: solid 0.5px;
+            border-radius: 5px;
+        }
+        #usrName{
+            position: absolute;
+            top: 0;
+            left: 55px;
+            width: 100px;
+            height: 50px;
+            word-wrap: break-word;
+            word-break: break-all;
+            line-height: 60px;
+        }
+        ul, li { list-style:none;}
+        a { text-decoration:none;color: grey;text-shadow: 0.5px 0.5px black;}
+        .nav ul li a {
+            width: 100%;
+            height: 35px;
+            text-align: left;
+            display: block;
+            line-height: 50px;
+        }
+        .nav ul li a:hover{
+            background-color:lightgray;
+            box-shadow: inset 0px 0px 4px 2px lightgray;
+            border-radius: 5px;
+            border: grey 1px solid;}
+        .nav ul li ul { position:absolute; display:none;}
+        .nav ul li ul li { float:none;}
+        .nav ul li ul li a { color:grey;font-size: 15px;background-color: white ;border-radius: 2px;border: solid 1px}
+        .nav ul li:hover ul{ display:block; }
+    </style>
+</head>
+<body>
+<div id="one">
+    <img id="logo" src="logo.png">
+    <span id="name">约炮与开房</span>
+<div class="nav">
+        <ul>
+            <li id="service" >
+                <a id="serviceOne" href="#" >
+                    <img src="answerDesk.png" style="width: 20px;height: 20px;position: absolute;top: 20px;left: 0px">
+                    <span style="color: grey; text-shadow: 0.5px 0.5px #424242;">
+                    客服中心</span>
+                 </a>
+                <ul>
+                    <li><a href="#">在线客服</a></li>
+
+                    <li><a href="#">联系电话</a></li>
+                </ul>
+            </li>
+
+
+            <!--这里的用户头像和用户名都要是动态的
+            -->
+            <li id="usr">
+                <a style="width:100%;height: 45px">
+                <img src="usr.png" id="usrImg" >
+                <div id="usrName" style="color: grey; text-shadow:0.5px 0.5px  #424242;"> luna0607▼</div>
+            </a>
+                <ul>
+                    <li><a href="#">个人信用</a></li>
+                    <li><a href="#">个人资料</a></li>
+                    <li><a href="#">我的历史订单</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </li>
+            <!--这里的用户头像和用户名都要是动态的
+        -->
+        </ul>
+</div>
+</div>
+</body>
+</html>
