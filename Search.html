@@ -5,18 +5,21 @@
     <title>Search</title>
 </head>
 <style>
-    iframe{z-index: 1!important;}
+    iframe{z-index: inherit!important;}
     *{margin: 0;padding: 0;font-family: "Microsoft YaHei", yaHei}
-    #main{background-color: lightgray;width: 100%;height: 87%;position: absolute;top: 50px;z-index: -1}
-    table{background-color: white;border-bottom: 0.5px solid;border-right: 0.5px solid}
+    #main{background-color: #eee;width: 100%;height: 87%;position: absolute;top: 50px;z-index: 0}
+    table{background-color: white;box-shadow: #5a5b5b 0 0 2px;border-radius: 3px}
     td{text-align: center;line-height: 8%;vertical-align: middle;color: grey;}
-    input{width: 99%;height: 110%;}
+    input{width: 99%;height: 100%;font-family: "Microsoft YaHei", yaHei;font-size: medium}
     #one{position: absolute;top:5%;left: 8%;width: 15%;height: 6%}
     #two{position: absolute;top:5%;left: 25%;width: 15%;height: 6%}
     #three{position: absolute;top:5%;left: 42%;width: 15%;height: 6%}
     #four{position: absolute;top:5%;left: 59%;width: 15%;height: 6%}
-    #five{position: absolute;top:5%;left: 76%;width: 15%;height: 6%;background-color: white}
-    #five:hover{background-color: grey;color: white}
+    #five{position: absolute;top:5%;left: 76%;width: 15%;height: 6%;}
+    #five:hover{background-color: #e0e0e0;}
+    #options{width: 83%;height:24%;position: absolute;top: 15%;left: 8%}
+    select.options{width: 99%;height: 100%}
+    #show{width: 83%;height: auto;position: absolute;top: 43%;left: 8%}
     footer{  color:dimgray;  position:absolute;right: 45%;  bottom:0;  text-align:center;  }
 </style>
 <script>
@@ -26,24 +29,34 @@
     }
 </script>
 <body>
-<iframe src="headerAfter.html" width="100%" height="500px" scrolling="no" frameborder="0"
-        onmouseover="move(this.id)" onmouseout="this.style.zIndex=-1"></iframe>
+<iframe src="headerAfter.html" width="100%" height="300px" scrolling="no" frameborder="0"></iframe>
 <div id="main">
     <table id="one">
-        <tr id="firstLine"><td>目的地</td><td><input></td></tr>
+        <tr id="firstLine"><td style="width: 40%">目的地</td><td><input></td></tr>
     </table>
     <table id="two">
-        <tr ><td>入住时间</td><td><input></td></tr>
+        <tr ><td style="width: 40%">入住时间</td><td><input></td></tr>
     </table>
     <table id="three">
-        <tr ><td>退房时间</td><td><input></td></tr>
+        <tr ><td style="width: 40%">退房时间</td><td><input></td></tr>
     </table>
     <table id="four">
-        <tr ><td>关键字</td><td><input></td></tr>
+        <tr ><td style="width: 40%">关键字</td><td><input></td></tr>
     </table>
-    <table id="five">
+    <table id="five" onmouseover="this.style.color='white'">
         <tr ><td>搜索</td></tr>
     </table>
+    <table id="options">
+        <tr><td style="width: 20%;border-bottom: solid gray 0.5px">商圈</td><td><select class="options"></select></td></tr>
+        <tr><td style="width: 20%;border-bottom: solid gray 0.5px">房价</td><td><select class="options"></select></td></tr>
+        <tr><td style="width: 20%;border-bottom: solid gray 0.5px">品牌</td><td><select class="options"></select></td></tr>
+        <tr><td style="width: 20%;">设施</td><td><select class="options"></select></td></tr>
+    </table>
+    <div id="show">
+        <table>
+            <tr></tr>
+        </table>
+    </div>
 </div>
 <footer>Copyright©Luna2016</footer>
 </body>
