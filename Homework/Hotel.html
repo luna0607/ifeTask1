@@ -5,8 +5,9 @@
     <title>Hotel</title>
     <style>
         *{margin: 0;padding: 0; font-family: mallory,"Helvetica Neue",Helvetica,Arial,sans-serif}
-        #hotel{position: absolute;top: 130px;right: 0px;width: 100%;
-            font-family: mallory,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+        #hotel{position: absolute;top: 130px;right: 0px;width: 100%;height:auto;
+            font-family: mallory,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+        #hotelName{position: absolute;top: 0;left: 0%;width: 100%}
         #name{font-family:"Microsoft YaHei UI Light";font-size: 30px;position: absolute;top: 0;left:8%}
         #location{font-family:"Microsoft YaHei UI Light";font-size: 15px;position: absolute;top:40px ;left: 8%}
         #picOne{position: absolute;top: 80px;left: 8%;background: url("jinlingPIC1.jpg");background-size:cover;
@@ -21,29 +22,32 @@
             text-decoration: none;color: white; text-align: center;vertical-align: middle;line-height: 150px;
             font-family: "Microsoft YaHei UI Light";}
         #more:hover{opacity: 0.7}
-        #tabs{position: absolute;top: 400px;left: 8%;width: 84%}
-        div.tab{width: 90px;height: 50px;font-family: "Microsoft YaHei UI Light";text-align: center;vertical-align: bottom;
+        #tabs{position: absolute;top: 400px;width:100%;height:auto;}
+        .tab{width: 90px;height: 50px;font-family: "Microsoft YaHei UI Light";text-align: center;vertical-align: bottom;
             line-height:50px;font-size: 15px;background-color: white;color: grey;border-radius:10px 10px 0 0;}
-        #one{position: absolute;left: 0;top:0;background-color: #16324a;color: white}
-        div.tab:hover{border-bottom: solid 1px #16324a;color: dimgray}
-        #two{position: absolute;left: 90px;top:0;}
-        #three{position: absolute;left: 180px;top:0}
+        #one{margin-left:8%;position: absolute;left: 0;top:0;background-color: #16324a;color: white}
+        #two{margin-left:8%;position: absolute;left: 90px;top:0;}
+        #three{margin-left:8%;position: absolute;left: 180px;top:0}
 
-        div.tabBelow{width: 100%;border-top: 1px solid #16324a;position: absolute;top: 50px}
-        #fangXings{display: block}
-        #information{display: none}
-        #evaluate{display: none}
+        div.tabBelow{width: 100%;position:absolute;top: 50px;}
+        #fangXings{display: block;}
+        #information{display: none;}
+        #evaluate{display: none;}
         img.room{width: 200px;height: 170px}
-        table{ margin-top:30px;width:100%;border: solid lightgray 1px;box-shadow: 3px 3px 3px lightgrey}
+        table{ margin-left:8%;margin-top:20px;width:84%;border: solid lightgray 1px;box-shadow: 3px 3px 3px lightgrey}
         td{font-family:"Microsoft YaHei UI Light";color: dimgray;font-size: 15px;
             text-align: left;line-height: 20px;border-bottom: solid lightgray 1px}
-        footer{text-align: center;height: 20px;line-height: 30px;margin-top:10px;width: 100%;color: dimgray; }
+        footer{font-family:"Microsoft YaHei UI Light";text-align: center;height: 30px;line-height: 30px;margin-top:30px;
+            width: 100%;
+            color:white;background-color:#16324a;}
 
-        div.about{font-family:"Microsoft YaHei UI Light";font-size: 25px;}
-        div.hotelInformation{font-family:"Microsoft YaHei UI Light";font-size: 15px; line-height:30px}
+        div.about{font-family:"Microsoft YaHei UI Light";font-size: 25px;position: relative;left: 8%;width: 84%}
+        div.hotelInformation{font-family:"Microsoft YaHei UI Light";font-size: 15px; line-height:30px;position: relative;left: 8%;width: 84%}
 
         img.usr{width: 100px;height: 100px;border-radius: 100px;margin: 20px}
-        td{}
+        a{text-decoration: none}
+        a:hover{color: dimgray;font-weight: bold}
+        .line{width: 84%;position: relative;top:50px;left: 8%;border: solid 0.5px lightgray}
     </style>
     <script>
         function one() {
@@ -96,9 +100,10 @@
     </div>
 
     <div id="tabs">
-        <div class="tab" id="one" onclick="one()">房型</div>
-        <div class="tab" id="two" onclick="two()">酒店信息</div>
-        <div class="tab" id="three" onclick="three()">点评</div>
+        <a href="#" class="tab" id="one" onclick="one()">房型</a>
+        <a href="#" class="tab" id="two" onclick="two()">酒店信息</a>
+        <a href="#" class="tab" id="three" onclick="three()">点评</a>
+        <div class="line"></div>
         <div class="tabBelow" id="fangXings">
             <div >
                 <table class="fangXing" cellpadding="0" cellspacing="0">
@@ -170,4 +175,5 @@
 
 </div>
 </body>
+
 </html>

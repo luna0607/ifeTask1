@@ -12,14 +12,18 @@
         select.left{width: 100%;height: 30px}
         #price{border-top: solid lightgray;border-bottom:solid lightgray}
         #evaluate{border-bottom: solid lightgray}
-        #show{position: absolute;top: 20%;left:20%;width: 80%;height: auto; }
-        div.hotel{width: 90%;height:150px;border: 1px solid lightgray}
+        #show{position: absolute;top: 20%;left:0;width: 100%;height: auto; }
+        div.hotel{width: 70%;height:150px;border: 1px solid lightgray;position: relative;top: 10px;left: 50px;margin-top: 20px;
+        margin-left: 20%}
         div.hotel:hover{box-shadow: 3px 3px 10px lightgrey}
         div.hotelImg{background-size: cover;width: 250px;height: 150px;position: absolute;top: 0;left: 0}
         div.name{font-family:"Microsoft YaHei UI Light";font-size: 30px;position: absolute;top: 0;left: 270px}
         div.hotelLocation{font-family:"Microsoft YaHei UI Light";font-size: 15px;position: absolute;top: 40px;left: 270px}
         div.hotelEvaluate{font-family:"Microsoft YaHei UI Light";font-size: 15px;position: absolute;bottom: 5px;right: 5px}
         div.hotelPrice{font-family:"Microsoft YaHei UI Light";font-size: 15px;position: absolute;bottom: 40px;right: 5px}
+        footer{font-family:"Microsoft YaHei UI Light";text-align: center;height: 30px;line-height: 30px;margin-top:30px;
+            width: 100%;
+            color:white;background-color:#16324a;}
     </style>
 </head>
 <body>
@@ -45,34 +49,35 @@
     </div>
 </div>
 <div id="show">
-    <div class="hotel" style="position: absolute;top: 10px;left: 50px;">
+    <div class="hotel" >
         <div class="hotelImg" style="background:url(hotel1.jpg);"></div>
         <div class="name">金陵饭店</div><br/>
         <div class="hotelLocation">南京市鼓楼区汉口路2号</div>
         <div class="hotelEvaluate">评价</div>
         <div class="hotelPrice">起价:<span class="hotelPrice"></span></div>
     </div>
-    <div class="hotel" style="position: absolute;top: 180px;left: 50px;">
+    <div class="hotel" >
         <div class="hotelImg" style="background:url(hotel1.jpg);"></div>
         <div class="name">金陵饭店</div><br/>
         <div class="hotelLocation">南京市鼓楼区汉口路2号</div>
         <div class="hotelEvaluate">评价</div>
         <div class="hotelPrice">起价:<span class="hotelPrice"></span></div>
     </div>
-    <div class="hotel" style="position: absolute;top: 350px;left: 50px;">
+    <div class="hotel">
         <div class="hotelImg" style="background:url(hotel1.jpg);"></div>
         <div class="name">金陵饭店</div><br/>
         <div class="hotelLocation">南京市鼓楼区汉口路2号</div>
         <div class="hotelEvaluate">评价</div>
         <div class="hotelPrice">起价:<span class="hotelPrice"></span></div>
     </div>
-    <div class="hotel" style="position: absolute;top: 520px;left: 50px;">
+    <div class="hotel" >
         <div class="hotelImg" style="background:url(hotel1.jpg);"></div>
         <div class="name">金陵饭店</div><br/>
         <div class="hotelLocation">南京市鼓楼区汉口路2号</div>
         <div class="hotelEvaluate">评价</div>
         <div class="hotelPrice">起价:<span class="hotelPrice"></span></div>
     </div>
+    <footer>All rights reserve.Copyright@Luna0607</footer>
 </div>
 </body>
 </html>

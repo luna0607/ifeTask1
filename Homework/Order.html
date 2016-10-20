@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <style>
+        *{font-family: mallory,"Helvetica Neue",Helvetica,Arial,sans-serif;margin: 0;}
+        body{clear: both}
+        #orderLeft{float:left;position:relative;left: 10%;width: 25%;height: 80%;border: solid 1px lightgray;
+            box-shadow: 3px 3px 3px lightgrey;background-color: white}
+        #orderHotelPicture{width: 100%;height: 40%;}
+       div.orderHotelName{font-family:"Microsoft YaHei UI Light";font-size: 20px;line-height: 50px;padding-left:20px;font-weight: bold }
+        #orderHotelLocation{font-size: 15px;line-height: 30px;padding-left:20px }
+        div.orderHotelLeftLine{border: solid 0.5px lightgray;margin-left:20px;margin-right:20px;}
+        div.orderLeftInformation {font-family:"Microsoft YaHei UI Light";font-size: 15px;line-height: 15px;padding-left:20px;}
+        #orderRight{float:right;position:relative;right:10%;width: 47%;height: auto;border: solid 1px lightgray;padding-left: 5%;
+            padding-top: 3%;
+            box-shadow: 3px 3px 3px lightgrey;}
+        div.orderRightName{font-family:"Microsoft YaHei UI Light";font-size: 20px;line-height: 50px;font-weight: bold}
+        div.orderRightInformation{font-family:"Microsoft YaHei UI Light";font-size: 15px;line-height: 30px;}
+        div.orderRightLine{border: solid 0.5px lightgray;margin-right:5%}
+        div.roomInfo{font-family:"Microsoft YaHei UI Light";font-size: 15px;line-height: 15px;
+            width:85%;border: solid lightgray 1px;margin: 15px;padding: 15px;box-shadow: 2px 2px 2px lightgrey}
+        input.peopleName{width: 215px;height: 20px}
+        input.peopleTelephone{width: 230px;height: 20px}
+        input.peopleMore{width: 260px;height: 20px}
+        #confirmOrder{font-family:"Microsoft YaHei UI Light";width: 200px;height: 50px;font-size: 20px;margin-top:10px;margin-bottom: 20px;
+            background-color: #16324a;color: white}
+        #confirmOrder:hover{font-weight: bold;background-color: #11456b}
+        footer{font-family:"Microsoft YaHei UI Light";text-align: center;height: 30px;line-height: 30px;margin-top:30px;
+            width: 100%;
+            color:white;background-color:#16324a;}
+    </style>
+</head>
+<body>
+<iframe src="headerAfter&Search.html" width="100%" height="100%" scrolling="no" frameborder="no"></iframe>
+<div id="orderLeft">
+    <img id="orderHotelPicture" src="hotel1.jpg">
+    <div class="orderHotelName">金陵饭店</div>
+    <div id="orderHotelLocation">南京市鼓楼区汉口路2号</div>
+    <div class="orderHotelLeftLine"></div>
+    <br/>
+    <div class="orderLeftInformation" >房型：<span id="roomKind">商务大床房</span></div><br/>
+    <div class="orderLeftInformation" >面积：<span id="roomSquare">30</span>m²</div><br/>
+    <div class="orderLeftInformation" >早餐：<span id="breakfast">有</span></div><br/>
+    <div class="orderLeftInformation" >最大可住：<span id="numberOfPeople">2</span>人</div><br/>
+</div>
+    <div id="orderRight">
+        <div class="orderRightName">预定信息</div>
+        <div class="orderRightLine"></div>
+
+        <div class="orderRightInformation">
+            入住时间：<span id="startDate">2016年10月20日</span>至<span id="endDate">2016年10月21日</span>
+            &nbsp;&nbsp;共<span id="days">1</span>晚<br/>
+            房间数量：<span id="rooms">1</span>
+        </div>
+        <div class="orderRightName">入住信息</div>
+        <div class="orderRightLine"></div>
+        <div class="roomInfo" >
+            房间<span >1</span><br/><br/>
+            入住人姓名<input type="text" name="peopleName" class="peopleName"><br/><br/>
+            联系电话<input type="text" name="peopleTelephone" class="peopleTelephone"><br/><br/>
+            备注<input type="text" name="more" class="peopleMore"><br/><br/>
+        </div>
+        <div class="orderRightLine"></div>
+        <div class="orderRightInformation">房费：<span>654</span>元</div>
+        <div><button id="confirmOrder">提交订单</button></div>
+    </div>
+<div style="clear: both"></div>
+<footer>All rights reserve.Copyright@Luna0607</footer>
+</body>
+</html>
