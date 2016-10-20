@@ -3,9 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <title>Hotel</title>
+    <style>
+        *{margin: 0;padding: 0; font-family: mallory,"Helvetica Neue",Helvetica,Arial,sans-serif}
+        #hotel{position: absolute;top: 130px;right: 0px;width: 100%;
+            font-family: mallory,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+        #name{font-family:"Microsoft YaHei UI Light";font-size: 30px;position: absolute;top: 0;left:8%}
+        #location{font-family:"Microsoft YaHei UI Light";font-size: 15px;position: absolute;top:40px ;left: 8%}
+        #picOne{position: absolute;top: 80px;left: 8%;background: url("jinlingPIC1.jpg");background-size:cover;
+            width:50%;height: 300px; }
+        #picTwo{position: absolute;top: 80px;left: 60%;background: url("jinlingPIC2.jpg");background-size: cover;
+        width: 32%;height: 150px}
+        #picThree{position: absolute;top: 240px;left: 60%;background: url("jinlingPIC3.jpg");background-size: cover;
+            width: 15.5%;height: 140px}
+        #picFour{position: absolute;top: 240px;right: 8%;background: url("jinlingPIC4.jpg");background-size: cover;
+            width: 15.5%;height: 140px;}
+        #more{position:absolute;top:0;left:0;width:100%;height: 100%;background-color: black;opacity: 0.5;
+            text-decoration: none;color: white; text-align: center;vertical-align: middle;line-height: 150px;
+            font-family: "Microsoft YaHei UI Light";}
+        #more:hover{opacity: 0.7}
+        #tabs{position: absolute;top: 400px;left: 8%;width: 84%}
+        div.tab{width: 90px;height: 50px;font-family: "Microsoft YaHei UI Light";text-align: center;vertical-align: bottom;
+            line-height:50px;font-size: 15px;background-color: white;color: grey;border-radius:10px 10px 0 0;}
+        #one{position: absolute;left: 0;top:0;background-color: #16324a;color: white}
+        div.tab:hover{border-bottom: solid 1px #16324a;color: dimgray}
+        #two{position: absolute;left: 90px;top:0;}
+        #three{position: absolute;left: 180px;top:0}
+
+        div.tabBelow{width: 100%;border-top: 1px solid #16324a;position: absolute;top: 50px}
+        #fangXings{display: block}
+        #information{display: none}
+        #evaluate{display: none}
+        img.room{width: 200px;height: 170px}
+        table{ margin-top:30px;width:100%;border: solid lightgray 1px;box-shadow: 3px 3px 3px lightgrey}
+        td{font-family:"Microsoft YaHei UI Light";color: dimgray;font-size: 15px;
+            text-align: left;line-height: 20px;border-bottom: solid lightgray 1px}
+        footer{text-align: center;height: 20px;line-height: 30px;margin-top:10px;width: 100%;color: dimgray; }
+
+        div.about{font-family:"Microsoft YaHei UI Light";font-size: 25px;}
+        div.hotelInformation{font-family:"Microsoft YaHei UI Light";font-size: 15px; line-height:30px}
+
+        img.usr{width: 100px;height: 100px;border-radius: 100px;margin: 20px}
+        td{}
+    </style>
+    <script>
+        function one() {
+            document.getElementById("one").style.backgroundColor="#16324a";
+            document.getElementById("one").style.color="white";
+            document.getElementById("two").style.backgroundColor="white";
+            document.getElementById("two").style.color="dimgray";
+            document.getElementById("three").style.backgroundColor="white";
+            document.getElementById("three").style.color="dimgray";
+            document.getElementById("fangXings").style.display="block";
+            document.getElementById("information").style.display="none";
+            document.getElementById("evaluate").style.display="none";
+        }
+        function two() {
+            document.getElementById("one").style.backgroundColor="white";
+            document.getElementById("one").style.color="dimgrey";
+            document.getElementById("two").style.backgroundColor="#16324a";
+            document.getElementById("two").style.color="white";
+            document.getElementById("three").style.backgroundColor="white";
+            document.getElementById("three").style.color="dimgray";
+            document.getElementById("fangXings").style.display="none";
+            document.getElementById("information").style.display="block";
+            document.getElementById("evaluate").style.display="none";
+        }
+        function three() {
+            document.getElementById("one").style.backgroundColor="white";
+            document.getElementById("one").style.color="dimgrey";
+            document.getElementById("two").style.backgroundColor="white";
+            document.getElementById("two").style.color="dimgray";
+            document.getElementById("three").style.backgroundColor="#16324a";
+            document.getElementById("three").style.color="white";
+            document.getElementById("fangXings").style.display="none";
+            document.getElementById("information").style.display="none";
+            document.getElementById("evaluate").style.display="block";
+        }
+    </script>
 </head>
 <body>
-<iframe src="headerAfter.html" width="100%" height="100%" scrolling="no" frameborder="no" ></iframe>
+<iframe src="headerAfter&Search.html" width="100%" height="100%" scrolling="no" frameborder="no" ></iframe>
+<div id="hotel">
+    <div id="hotelName">
+        <span id="name">金陵饭店</span>
+        <span id="location">江苏省南京市鼓楼区汉口路2号</span>
+        <div id="picOne"></div>
+        <div id="picTwo"></div>
+        <div id="picThree"></div>
+        <div id="picFour">
+            <a href="#" id="more">查看更多</a>
+        </div>
+    </div>
 
+    <div id="tabs">
+        <div class="tab" id="one" onclick="one()">房型</div>
+        <div class="tab" id="two" onclick="two()">酒店信息</div>
+        <div class="tab" id="three" onclick="three()">点评</div>
+        <div class="tabBelow" id="fangXings">
+            <div >
+                <table class="fangXing" cellpadding="0" cellspacing="0">
+                    <tr><td class="img"  rowspan="4"><img src="jinlingPIC2.jpg" class="room">
+                        <span>商务大床房</span><span>15m²</span> <span>可住两人</span></td><td >优惠类型</td><td >早餐</td><td >价格</td>
+                        <td ></td></tr>
+                    <tr>
+                      <td >原价</td><td >有</td><td ></td><td ><button>预订</button></td></tr>
+                 <tr>   <td  >原价</td><td >有</td><td ></td><td ><button>预订</button></td></tr>
+                    <tr>   <td  >原价</td><td >有</td><td ></td><td ><button>预订</button></td></tr>
+                </table>
+            </div>
+            <div>
+                <table class="fangXing" cellpadding="0" cellspacing="0">
+                    <tr><td class="img"  rowspan="4"><img src="jinlingPIC2.jpg" class="room">
+                        <span>商务大床房</span><span>15m²</span> <span>可住两人</span></td><td >优惠类型</td><td >早餐</td><td >价格</td>
+                        <td ></td></tr>
+                    <tr>
+                        <td >原价</td><td >有</td><td ></td><td ><button>预订</button></td></tr>
+                    <tr>   <td  >原价</td><td >有</td><td ></td><td ><button>预订</button></td></tr>
+                    <tr>   <td  >原价</td><td >有</td><td ></td><td ><button>预订</button></td></tr>
+                </table>
+            </div>
+            <footer>All rights reserve.Copyright@Luna0607</footer>
+        </div>
+        <div class="tabBelow" id="information">
+
+            <div class="about" id="informationOne">关于金陵饭店</div>
+            <div class="hotelInformation" id="informationOneText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南京，山水城林，钟灵毓秀。南京金陵饭店，是中国现代酒店的先行者，明慧敦厚，婉约热忱；细意浓情的服务在国际酒店业盛受赞誉。金陵饭店是南京城市的 “中心地标”，东西方文化在这里交相辉映。1983年开业至今，金陵饭店多次成功地接待世界多国政要及名流巨商。尊贵宾客、高端商务、精英会议已然将金陵饭店视为首选。金陵饭店不仅屡获“中国最受欢迎十大酒店”和“中国最佳商务酒店”殊荣，更一举摘得中国服务业领域唯一中国质量管理最高奖桂冠。<br/><br/></div>
+            <div class="about" id="informationTwo">酒店住宿设施</div>
+            <div class="hotelInformation" id="informationTwoText"> 免费房内无线网络<br/>无线网络(公共区域) <br/>
+                24小时送餐服务
+            </div>
+
+            <footer>All rights reserve.Copyright@Luna0607</footer>
+        </div>
+        <div class="tabBelow" id="evaluate">
+            <table cellspacing="0" cellpadding="0">
+                <tr><td rowspan="2">
+                    <img class="usr" src="usr.png"><br/>
+                </td>
+                    <td>2016年10月20日</td>
+                </tr>
+                <tr>
+                    <td>我觉得这个网站做得实在是太好了！这个酒店也很好，毕竟我从来没有住过。</td>
+                </tr>
+                <tr>
+                   <td>luna0607</td> <td>评分：9分</td>
+                </tr>
+
+            </table>
+            <table  cellspacing="0" cellpadding="0">
+                <tr><td rowspan="2">
+                    <img class="usr" src="usr.png"><br/>
+                </td>
+                    <td>2016年10月20日</td>
+                </tr>
+                <tr>
+                    <td>我觉得这个网站做得实在是太好了！这个酒店也很好，毕竟我从来没有住过。</td>
+                </tr>
+                <tr>
+                    <td>luna0607</td> <td>评分：9分</td>
+                </tr>
+
+            </table>
+            <footer>All rights reserve.Copyright@Luna0607</footer>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
