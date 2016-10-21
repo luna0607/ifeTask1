@@ -25,7 +25,7 @@
         #tabs{position: absolute;top: 400px;width:100%;height:auto;}
         .tab{width: 90px;height: 50px;font-family: "Microsoft YaHei UI Light";text-align: center;vertical-align: bottom;
             line-height:50px;font-size: 15px;background-color: white;color: grey;border-radius:10px 10px 0 0;}
-        #one{margin-left:8%;position: absolute;left: 0;top:0;background-color: #16324a;color: white}
+        #one{margin-left:8%;position: absolute;left: 0;top:0;background-color: #e57373;color: white}
         #two{margin-left:8%;position: absolute;left: 90px;top:0;}
         #three{margin-left:8%;position: absolute;left: 180px;top:0}
 
@@ -47,11 +47,13 @@
         img.usr{width: 100px;height: 100px;border-radius: 100px;margin: 20px}
         a{text-decoration: none}
         a:hover{color: dimgray;font-weight: bold}
-        .line{width: 84%;position: relative;top:50px;left: 8%;border: solid 0.5px lightgray}
+        .line{width: 84%;position: relative;top:50px;left: 8%;border: solid 0.5px #16324a}
+        button{background-color:  #e57373;width: 80px;height: 30px;border-radius: 5px;border: none;color: white;
+        font-family: "Microsoft YaHei UI Light";font-size: 15px}
     </style>
     <script>
         function one() {
-            document.getElementById("one").style.backgroundColor="#16324a";
+            document.getElementById("one").style.backgroundColor="#e57373";
             document.getElementById("one").style.color="white";
             document.getElementById("two").style.backgroundColor="white";
             document.getElementById("two").style.color="dimgray";
@@ -64,7 +66,7 @@
         function two() {
             document.getElementById("one").style.backgroundColor="white";
             document.getElementById("one").style.color="dimgrey";
-            document.getElementById("two").style.backgroundColor="#16324a";
+            document.getElementById("two").style.backgroundColor="#e57373";
             document.getElementById("two").style.color="white";
             document.getElementById("three").style.backgroundColor="white";
             document.getElementById("three").style.color="dimgray";
@@ -77,7 +79,7 @@
             document.getElementById("one").style.color="dimgrey";
             document.getElementById("two").style.backgroundColor="white";
             document.getElementById("two").style.color="dimgray";
-            document.getElementById("three").style.backgroundColor="#16324a";
+            document.getElementById("three").style.backgroundColor="#e57373";
             document.getElementById("three").style.color="white";
             document.getElementById("fangXings").style.display="none";
             document.getElementById("information").style.display="none";

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PersonCentre</title>
+    <script>
+        function one() {
+            document.getElementById("one").style.backgroundColor="#e57373";
+            document.getElementById("one").style.color="white";
+            document.getElementById("two").style.backgroundColor="white";
+            document.getElementById("two").style.color="dimgray";
+            document.getElementById("three").style.backgroundColor="white";
+            document.getElementById("three").style.color="dimgray";
+            document.getElementById("personProfile").style.display="block";
+            document.getElementById("personCredit").style.display="none";
+            document.getElementById("orderList").style.display="none";
+        }
+        function two() {
+            document.getElementById("one").style.backgroundColor="white";
+            document.getElementById("one").style.color="dimgrey";
+            document.getElementById("two").style.backgroundColor="#e57373";
+            document.getElementById("two").style.color="white";
+            document.getElementById("three").style.backgroundColor="white";
+            document.getElementById("three").style.color="dimgray";
+            document.getElementById("personProfile").style.display="none";
+            document.getElementById("personCredit").style.display="block";
+            document.getElementById("orderList").style.display="none";
+        }
+        function three() {
+            document.getElementById("one").style.backgroundColor="white";
+            document.getElementById("one").style.color="dimgrey";
+            document.getElementById("two").style.backgroundColor="white";
+            document.getElementById("two").style.color="dimgray";
+            document.getElementById("three").style.backgroundColor="#e57373";
+            document.getElementById("three").style.color="white";
+            document.getElementById("personProfile").style.display="none";
+            document.getElementById("personCredit").style.display="none";
+            document.getElementById("orderList").style.display="block";
+        }
+    </script>
+    <style>
+        #tabs{position: absolute;top: 130px;width:99%;height:auto;}
+        .tab{width: 10%;height: 50px;font-family: "Microsoft YaHei UI Light";text-align: center;vertical-align: bottom;
+            line-height:50px;font-size: 15px;background-color: white;color: grey;border-radius:10px 0px 0px 10px;
+            border: solid 0.5px  #e57373}
+        #one{float:left;position:absolute;left: 0;top:0;background-color: #e57373;color: white}
+        #two{float:left;position: absolute;left: 0;top:50px;}
+        #three{float:left;position:absolute;left: 0;top:100px}
+        .tabRight{position: absolute;left: 10%;top:0;width: 90%;height: auto;border-left:solid 0.5px  #e57373;
+            font-family: "Microsoft YaHei UI Light"}
+        #personProfile{display: block}
+        #personCredit{display: none}
+        #orderList{display: none}
+
+
+        #usrPic{width: 200px;height: 200px;border-radius: 200px;position:absolute;top: 80px;left: 80px}
+        #profile{float: right;position: relative;right: 200px;top: 80px}
+        table{line-height: 30px;}
+
+        button{width: 100px;height: 50px;border: none;  background-color: white;color:grey;font-size: 15px;border: solid 0.5px;
+        font-family: "Microsoft YaHei UI Light";border-radius: 10px}
+        #changeUsrPic{position:absolute;top:350px;left:130px;}
+        #changeProfile{position:absolute;top:350px;left:600px;}
+        button:hover{background-color:#ef5350;color: white}
+
+        img.hotelPic{width: 150px;height: 100px}
+        span.orderHotelName{font-family:"Microsoft YaHei UI Light";font-size: 20px;line-height: 20px;
+            font-weight: bold;position: relative;top: 5px;left: 5px}
+        span.orderHotelLocation{position: relative;top: 0px;left: 5px}
+        span.orderMoney{position: relative;bottom: 0px;left: 5px;line-height: 20px;}
+        span.orderMoney{font-size: 20px;color: #e57373;font-weight: bold}
+        button.orderButton{position: relative;top: 50%;left: 25px}
+        td.orderButton{width: 150px;line-height: 8px;}
+        span.cancelWarning{font-size: 8px;position: relative;top: 55%}
+        table.orderNotYet{width: 80%;margin: 20px;margin-left: 10%;padding-right:40px;padding-left:40px;font-size: 13px;
+            box-shadow: 2px 2px 2px lightgrey}
+        table.orderCheckedIn{width: 80%;margin: 20px;margin-left: 10%;padding-right:40px;padding-left:40px;font-size: 13px;
+            box-shadow: 2px 2px 2px lightgrey}
+        table.orderDone{width: 80%;margin: 20px;margin-left: 10%;padding-right:40px;padding-left:40px;font-size: 13px;
+            box-shadow: 2px 2px 2px lightgrey}
+        td{border-bottom: solid 0.5px lightgray;}
+        footer{font-family:"Microsoft YaHei UI Light";text-align: center;height: 30px;line-height: 30px;margin-top:30px;
+            width: 100%;  color:white;background-color:#16324a;}
+        footer.one{position: absolute;bottom: 0;left: 0}
+
+        a{text-decoration: none}
+
+          #credit{position: absolute;left: 100px;top:100px}
+        #rechargeCredit{position: absolute;left: 100px;top: 200px}
+    </style>
+</head>
+<body>
+<iframe src="headerAfter&Search.html" width="100%" height="100%" scrolling="no" frameborder="no"></iframe>
+<div id="tabs">
+    <a href="#" onclick="one()" class="tab" id="one">个人资料</a>
+    <a href="#" onclick="two()" class="tab" id="two">个人信用</a>
+    <a href="#" onclick="three()" class="tab" id="three">我的订单</a>
+    <div class="tabRight" id="personProfile">
+        <img id="usrPic" src="usr.png">
+      <!--  <button id="changeUsrPic">修改头像</button> -->
+        <table cellpadding="0" cellspacing="0" id="profile">
+            <tr><td>用户名</td><td>luna0607</td></tr>
+            <tr><td>昵称</td><td>luna</td></tr>
+            <tr><td>邮箱</td><td>151250088@smail.nju.edu.cn</td></tr>
+            <tr><td>手机</td><td>123456789101</td></tr>
+            <tr><td>出生日期</td><td>2016年10月21日</td></tr>
+            <tr><td>性别</td><td>女</td></tr>
+            <tr><td>国家和地区</td><td>中国</td></tr>
+        </table>
+        <a href="changeProfile.html"><button  id="changeProfile">修改资料</button ></a>
+
+    </div>
+    <div class="tabRight" id="personCredit">
+        <table id="credit">
+            <tr><td>信用值</td><td><span id="creditValue">80</span>/100</td></tr>
+        </table>
+        <button id="rechargeCredit">点我充值</button>
+    </div>
+    <div class="tabRight" id="orderList">
+        <table class="orderDone">
+            <tr><td>订单号：12345677</td><td>预定时间：<span>2016年10月20日</span></tr>
+            <tr><td><img class="hotelPic" src="hotel1.jpg"></td>
+                <td ><span class="orderHotelName">金陵饭店</span><br/>
+                    <span class="orderHotelLocation">南京市鼓楼区汉口路2号</span><br/>
+                <span class="orderMoney"><span>654</span>元</span></td>
+                <td>待入住</td>
+                <td class="orderButton"><button class="orderButton">取消</button><br/>
+                    <span class="cancelWarning">如果撤销的订单距离最晚订单执行时间不足 6 个小时，撤销的同时扣除信用值，信用值为订单的 （总价值 *1/2
+）
+</span>
+                </td>
+            </tr>
+        </table>
+        <table class="orderNotYet">
+            <tr><td>订单号：12345677</td><td>预定时间：<span>2016年10月20日</span></tr>
+            <tr><td><img class="hotelPic" src="hotel1.jpg"></td>
+                <td ><span class="orderHotelName">金陵饭店</span><br/>
+                    <span class="orderHotelLocation">南京市鼓楼区汉口路2号</span><br/>
+                    <span class="orderMoney"><span>654</span>元</span></td>
+                <td>待入住</td>
+                <td class="orderButton"><button class="orderButton">取消</button><br/>
+                    <span class="cancelWarning">如果撤销的订单距离最晚订单执行时间不足 6 个小时，撤销的同时扣除信用值，信用值为订单的 （总价值 *1/2
+）
+</span>
+                </td>
+            </tr>
+        </table>
+        <table class="orderCheckedIn">
+            <tr><td>订单号：12345677</td><td>预定时间：<span>2016年10月20日</span></tr>
+            <tr><td><img class="hotelPic" src="hotel1.jpg"></td>
+                <td ><span class="orderHotelName">金陵饭店</span><br/>
+                    <span class="orderHotelLocation">南京市鼓楼区汉口路2号</span><br/>
+                    <span class="orderMoney"><span>654</span>元</span></td>
+                <td>已入住</td>
+                <td class="orderButton"><button class="orderButton">投诉</button>
+                </td>
+            </tr>
+        </table>
+        <table class="orderDone">
+            <tr><td>订单号：12345677</td><td>预定时间：<span>2016年10月20日</span></tr>
+            <tr><td><img class="hotelPic" src="hotel1.jpg"></td>
+                <td ><span class="orderHotelName">金陵饭店</span><br/>
+                    <span class="orderHotelLocation">南京市鼓楼区汉口路2号</span><br/>
+                    <span class="orderMoney"><span>654</span>元</span></td>
+                <td>已完成</td>
+                <td class="orderButton"><button class="orderButton">评价</button><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
