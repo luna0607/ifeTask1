@@ -1,0 +1,57 @@
+*{font-family: "Microsoft YaHei UI Light"}
+footer{text-align: center;height: 30px;line-height: 30px;  width: 100%;  color:#16324a;position:relative;left: 0;
+    border-top: solid 0.5px lightgray;}
+footer.absolute{position: absolute;bottom: 0;left: 0}
+div.h{font-size: 30px;line-height: 30px;margin-left: 10%;margin-right: 5%;margin-top:10px;padding-bottom: 10px;
+    border-bottom: solid 0.5px lightgray;width: 90%}
+a{text-decoration: none;width: 150px;height: 50px;border-radius: 10px;text-align: center;font-size: 20px;
+    line-height: 50px;float: right;color: dimgray;border: solid 0.5px;margin-top: 30px}
+a:hover{background-color: dimgray;color: white}
+
+/*checkInOut*/
+#checkIn{position: absolute;top: 20%;left: 5%}
+#checkOut{position: absolute;top: 50%;left: 5%}
+#onlineCheckIn{position: absolute;left: 30%;top: 30%}
+#offlineCheckIn{position: absolute;left: 60%;top: 30%}
+#onlineCheckOut{position: absolute;left: 30%;top: 60%}
+#offlineCheckOut{position: absolute;left: 60%;top: 60%}
+
+/*HotelProfile*/
+
+div.form{margin-left: 10%;font-size: 15px;line-height: 25px;width: 40%;border: solid}
+table.formFang{margin-left: 10%;font-size: 15px;line-height: 25px;margin-top: 20px;width: 40%}
+span.canShu{font-weight: bold}
+#PicName{float: right;width: 45%}
+#PicNameP{float: right;width: 45%}
+img.HotelProfile{width: 45%}
+
+#HotelProfileChange{width: 100px;}
+#HotelProfileReturn{width: 100px;}
+#change{position:relative;right: 10%}
+#return{position:relative;right: 16%}
+
+/*HotelProFileChange*/
+#PicName{float: right;width: 45%}
+#PicNameP{float: right;width: 45%}
+#change{position:relative;right: 10%}
+#return{position:relative;right: 16%}
+input.HotelProfileChange{width: 90%;font-size: 14px}
+textarea{width: 90%;height: 100px}
+input.radio{width: auto}
+
+/*OnlineCheckIn*/
+table.order{width: 90%;margin-left:5%;margin-top:20px;padding:10px;font-size: 15px;line-height: 15px;
+    box-shadow: 2px 2px 2px lightgrey;  border: solid 0.5px lightgray}
+img.usrPIc{width: 70px;height: 70px;border-radius: 70px}
+/*OfflineCheckOut*/
+table.formCheckOut{margin-left: 10%;line-height: 30px;width: 50%;margin-top: 30px}
+select.checkOut{width: 80%;height: 20px;font-size: 15px}
+input.checkOut{width: 80%;height: 20px;font-size: 15px}
+a.checkOutConfirm{position: absolute;top: 300px;left: 20%}
+a.checkOutReturn{position: absolute;top: 300px;left: 40%}
+
+/*sale*/
+span.note{font-size: 10px;}
+
+table.search{font-size: 15px;line-height: 30px;margin-left: 10%}
+input.usrname{width: 200px;height: 20px}
