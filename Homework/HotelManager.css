@@ -19,7 +19,7 @@ a:hover{background-color: dimgray;color: white}
 /*HotelProfile*/
 
 div.form{margin-left: 10%;font-size: 15px;line-height: 25px;width: 40%;border: solid}
-table.formFang{margin-left: 10%;font-size: 15px;line-height: 25px;margin-top: 20px;width: 40%}
+table.formFang{margin-left: 10%;font-size: 15px;line-height: 25px;margin-top: 20px;width: 40%;}
 span.canShu{font-weight: bold}
 #PicName{float: right;width: 45%}
 #PicNameP{float: right;width: 45%}
@@ -55,3 +55,4 @@ span.note{font-size: 10px;}
 
 table.search{font-size: 15px;line-height: 30px;margin-left: 10%}
 input.usrname{width: 200px;height: 20px}
+a.save{position: absolute;top:150px;right: 20%}
